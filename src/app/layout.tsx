@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Vegeteal',
-  description: 'Connect and play in the Star Blink universe',
+  description: 'Connect and play',
 }
 
 export default function RootLayout({
