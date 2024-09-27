@@ -2,9 +2,6 @@
 import './globals.css'
 import '@solana/wallet-adapter-react-ui/styles.css';
 
-import { Inter } from 'next/font/google'
-import { Metadata } from 'next';
-
 import { useMemo } from 'react';
 
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
@@ -17,11 +14,6 @@ import { Twitter } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import WalletConn from '@/components/WalletConn'
-
-// export const metadata: Metadata = {
-//   title: 'Blink Hippo',
-//   description: 'Connect and play',
-// };
 
 export default function RootLayout({
   children,
