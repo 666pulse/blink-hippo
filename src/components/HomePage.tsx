@@ -11,7 +11,7 @@ export default function HomePage() {
       <header className="p-4 flex justify-between items-center">
         <div className="flex items-center">
           <Image src="/placeholder.svg" alt="Logo" width={40} height={40} />
-          <span className="ml-2 text-xl font-bold">STAR BLINK</span>
+          <span className="ml-2 text-xl font-bold">Blink Cat</span>
         </div>
         <nav className="flex items-center space-x-4">
           <Link href="/how-to-play" className="text-sm hover:text-yellow-300">
