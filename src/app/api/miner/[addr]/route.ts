@@ -37,7 +37,7 @@ export const GET = (req: Request, { params }) => {
       icon: new URL("/hippo.jpg", new URL(req.url).origin).toString(),
       title: "Blink Hippo",
       disabled: false,
-      description: `Bring Meme Users into the Blinks ${addr}`,
+      description: `Bring Meme Users into the Blinks: ${addr}`,
       label: "Blink Hippo",
       links: {
         actions: [
