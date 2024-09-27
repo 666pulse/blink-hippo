@@ -3,18 +3,25 @@ import './globals.css'
 import '@solana/wallet-adapter-react-ui/styles.css';
 
 import { Inter } from 'next/font/google'
+import { Metadata } from 'next';
+
+import { useMemo } from 'react';
 
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
 import { PhantomWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { clusterApiUrl } from '@solana/web3.js';
-import { useMemo } from 'react';
 
-// export const metadata = {
-//   title: 'Vegeteal',
+import { Twitter } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+import WalletConn from '@/components/WalletConn'
+
+// export const metadata: Metadata = {
+//   title: 'Blink Hippo',
 //   description: 'Connect and play',
-// }
+// };
 
 export default function RootLayout({
   children,
@@ -37,10 +44,37 @@ export default function RootLayout({
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect>
             <WalletModalProvider>
-              {children}
+                <div className="min-h-2 bg-gradient-to-b from-[#1a1a2e] to-[#16213e] text-white flex flex-col">
+                  <header className="p-4 flex justify-between items-center">
+                    <div className="flex items-center">
+                      <Link href="/" className="flex items-center">
+                        <Image src="/hippo.jpg" alt="Logo" width={40} height={40} />
+                        <span className="ml-2 text-xl font-bold">Blink Hippo</span>
+                      </Link>
+                    </div>
+
+                    <nav className="flex items-center space-x-4">
+
+                      <Link href="https://twitter.com" className="text-yellow-300">
+                        <Twitter size={20} />
+                      </Link>
+
+                      <Link href="/miner" className="text-yellow-300">
+                        Miner
+                      </Link>
+
+                      <WalletConn/>
+                    </nav>
+                  </header>
+                </div>
             </WalletModalProvider>
           </WalletProvider>
         </ConnectionProvider>
+
+        <main>
+          {children}
+        </main>
+
       </body>
     </html>
   );

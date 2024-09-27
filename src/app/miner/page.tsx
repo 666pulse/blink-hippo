@@ -2,14 +2,14 @@ import { Suspense } from 'react'
 import MinerDashboard from './MinerDashboard'
 
 async function fetchMinerData() {
-  // In a real application, this would be an API call
+
   return {
-    totalCoin: "2082458101396919",
+    totalCoin: "458101396919",
     myCoin: "0",
     myShare: "0",
     minerLevel: "lv.1",
     unprotectedCollectionLimit: "10",
-    collectTime: "00:10:30",
+    collectTime: "10:30:00",
     myMinerBlink: "blinkhippo.io/miner/...",
     miners: [
       {

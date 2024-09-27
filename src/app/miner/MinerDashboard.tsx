@@ -104,7 +104,7 @@ export default function MinerDashboard({ data }: { data: MinerData }) {
         )}
         {activeTab === 'activity' && (
           <div className="mt-4">
-            <p>Activity content would go here</p>
+            <p>No Data</p>
           </div>
         )}
       </div>
