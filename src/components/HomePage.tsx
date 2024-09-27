@@ -21,6 +21,10 @@ export default function HomePage() {
             <Twitter size={20} />
           </Link>
 
+          <Link href="/miner" className="text-yellow-300">
+          miner
+          </Link>
+
           <WalletConn/>
         </nav>
       </header>
