@@ -3,6 +3,7 @@
 import { Twitter } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import WalletConn from '@/components/WalletConn'
 
 export default function HomePage() {
   return (
@@ -19,11 +20,15 @@ export default function HomePage() {
           <Link href="https://twitter.com" className="text-yellow-300">
             <Twitter size={20} />
           </Link>
+
+        <WalletConn/>
+
           <Link
             href="/connect"
             className="bg-yellow-300 text-blue-900 px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-400 transition duration-300"
           >
-            Connect
+            Connect1111
+
           </Link>
         </nav>
       </header>
@@ -34,6 +39,7 @@ export default function HomePage() {
         >
           Connect
         </Link>
+
       </main>
       <div className="absolute bottom-0 right-0 w-1/3 max-w-sm">
         <Image
