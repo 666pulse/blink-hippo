@@ -9,7 +9,10 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: #F1F1F1; */
+  /* color: #00B294; */
+  /* color: rgb(var(--foreground-rgb)); */
+  color: #00B294;
   background: linear-gradient(
       to bottom,
       transparent,

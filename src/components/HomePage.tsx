@@ -10,7 +10,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-b from-[#1a1a2e] to-[#16213e] text-white flex flex-col">
       <header className="p-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Image src="/hippo.jpg" alt="Logo" width={60} height={60} />
+          <Image src="/hippo.jpg" alt="Logo" width={40} height={40} />
           <span className="ml-2 text-xl font-bold">Blink Hippo</span>
         </div>
         <nav className="flex items-center space-x-4">
@@ -22,7 +22,7 @@ export default function HomePage() {
           </Link>
 
           <Link href="/miner" className="text-yellow-300">
-          miner
+            Miner
           </Link>
 
           <WalletConn/>
@@ -39,7 +39,7 @@ export default function HomePage() {
       </main>
       <div className="absolute bottom-0 right-0 w-1/3 max-w-sm">
         <Image
-          src="/placeholder.svg"
+          src="/hippo.jpg"
           alt=""
           width={300}
           height={300}
