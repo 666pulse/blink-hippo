@@ -21,15 +21,7 @@ export default function HomePage() {
             <Twitter size={20} />
           </Link>
 
-        <WalletConn/>
-
-          <Link
-            href="/connect"
-            className="bg-yellow-300 text-blue-900 px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-400 transition duration-300"
-          >
-            Connect1111
-
-          </Link>
+          <WalletConn/>
         </nav>
       </header>
       <main className="flex-grow flex flex-col items-center justify-center">
