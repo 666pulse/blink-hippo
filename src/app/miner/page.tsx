@@ -15,7 +15,7 @@ async function fetchMinerData() {
       {
         addr: "...",
         level: "1",
-        collectTime: "05:06:29",
+        collectTime: "00:00:00",
         upgradedLevel: "1",
         totalLevel: "1",
         currentEpochCoin: "4",
