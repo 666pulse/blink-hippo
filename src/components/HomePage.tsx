@@ -10,8 +10,8 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-b from-[#1a1a2e] to-[#16213e] text-white flex flex-col">
       <header className="p-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Image src="/placeholder.svg" alt="Logo" width={40} height={40} />
-          <span className="ml-2 text-xl font-bold">Blink Cat</span>
+          <Image src="/hippo.jpg" alt="Logo" width={60} height={60} />
+          <span className="ml-2 text-xl font-bold">Blink Hippo</span>
         </div>
         <nav className="flex items-center space-x-4">
           <Link href="/how-to-play" className="text-sm hover:text-yellow-300">
