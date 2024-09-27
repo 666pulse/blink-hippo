@@ -9,14 +9,5 @@
 }
 
 body {
-  /* color: #F1F1F1; */
-  /* color: #00B294; */
-  /* color: rgb(var(--foreground-rgb)); */
-  color: #00B294;
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #00B294;
 }

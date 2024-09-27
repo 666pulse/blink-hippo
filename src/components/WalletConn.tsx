@@ -32,7 +32,7 @@ function WalletConn() {
   return (
     <div>
       <button onClick={handleClick}
-        className="bg-yellow-300 text-blue-900 px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-400 transition duration-300">
+        className="bg-[#F1F1F1] text-[#00B294] px-4 py-2 rounded-full text-sm font-semibold transition duration-300">
         {connecting ? 'Connecting...' : connected ? `${readable}` : 'Connect'}
       </button>
     </div>

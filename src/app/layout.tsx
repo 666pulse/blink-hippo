@@ -44,27 +44,29 @@ export default function RootLayout({
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect>
             <WalletModalProvider>
-                <div className="min-h-2 bg-gradient-to-b from-[#1a1a2e] to-[#16213e] text-white flex flex-col">
-                  <header className="p-4 flex justify-between items-center">
-                    <div className="flex items-center">
-                      <Link href="/" className="flex items-center">
-                        <Image src="/hippo.jpg" alt="Logo" width={40} height={40} />
-                        <span className="ml-2 text-xl font-bold">Blink Hippo</span>
-                      </Link>
+                <div className="min-h-2 bg-gradient-to-b from-[#00B294] to-[#00B294] text-white flex flex-col">
+                  <header className="p-4 flex flex-col">
+                    <div className="flex justify-between items-center mb-2">
+                      <div className="flex items-center">
+                        <Link href="/" className="flex items-center">
+                          <Image src="/hippo.jpg" alt="Logo" width={40} height={40} />
+                          <span className="ml-2 text-xl font-bold">Blink Hippo</span>
+                        </Link>
+                      </div>
+
+                      <nav className="flex items-center space-x-4">
+                        <Link href="https://twitter.com" style={{color: "#F1F1F1"}}>
+                          <Twitter size={20} />
+                        </Link>
+
+                        <Link href="/miner" style={{color: "#F1F1F1"}}>
+                          Miner
+                        </Link>
+
+                        <WalletConn/>
+                      </nav>
                     </div>
-
-                    <nav className="flex items-center space-x-4">
-
-                      <Link href="https://twitter.com" className="text-yellow-300">
-                        <Twitter size={20} />
-                      </Link>
-
-                      <Link href="/miner" className="text-yellow-300">
-                        Miner
-                      </Link>
-
-                      <WalletConn/>
-                    </nav>
+                    <div className="border-b-2 border-white opacity-50"></div>
                   </header>
                 </div>
             </WalletModalProvider>
