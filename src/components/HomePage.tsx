@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import WalletConn from "@/components/WalletConn";
 
 export default function HomePage() {
@@ -22,7 +22,8 @@ export default function HomePage() {
           height={300}
           className="pb-10"
           style={{
-            animation: 'shaking 1.2s ease-in-out infinite, pendulum 4s linear infinite'
+            animation: 'shaking 1s ease-in-out infinite'
+            // animation: 'shaking 1.2s ease-in-out infinite, pendulum 4s linear infinite'
           }}
         />
       </div>
@@ -53,17 +54,17 @@ export default function HomePage() {
         @keyframes shaking {
             10%,
             90% {
-                transform: translate3d(-2px, 0, 0);
+                transform: translate3d(-10px, 0, 0);
             }
 
             20%,
             80% {
-                transform: translate3d(4px, 0, 0);
+                transform: translate3d(20px, 0, 0);
             }
 
             30%,
             70% {
-                transform: translate3d(-6px, 0, 0);
+                transform: translate3d(-5px, 0, 0);
             }
 
             40%,

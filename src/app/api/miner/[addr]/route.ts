@@ -16,6 +16,8 @@ import {
   clusterApiUrl,
 } from "@solana/web3.js";
 
+export const runtime = 'edge';
+
 const amount = 1;
 // create the standard headers for this route (including CORS)
 const headers = createActionHeaders({ chainId: "mainnet-beta", actionVersion: "1" });
@@ -42,12 +44,12 @@ export const GET = (req: Request, { params }) => {
       links: {
         actions: [
           {
-            // type: "external-link",
+            type: "transaction",
             label: "Collect",
             href: `${baseHref}/collect`,
           },
           {
-            // type: "external-link",
+            type: "transaction",
             label: "Upgrade",
             href: `${baseHref}/upgrade`,
           },
@@ -82,6 +84,7 @@ export const POST = async (req: Request, { params }) => {
     try {
       account = new PublicKey(body.account);
     } catch (err) {
+      console.log(err);
       return new Response("Invalid 'account' provided", {
         status: 400,
         headers: ACTIONS_CORS_HEADERS,
@@ -121,6 +124,7 @@ export const POST = async (req: Request, { params }) => {
     transaction.recentBlockhash = await getRecentBlockhash();
     const payload: ActionPostResponse = await createPostResponse({
       fields: {
+        type: "transaction",
         transaction,
       },
     });

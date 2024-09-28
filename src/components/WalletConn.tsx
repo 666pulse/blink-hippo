@@ -6,7 +6,8 @@ import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 
 function WalletConn() {
 
-  const { wallet, publicKey, connect, disconnect, connecting, connected } =
+  // const { wallet, publicKey, connect, disconnect, connecting, connected } =
+  const { publicKey, disconnect, connecting, connected } =
     useWallet();
   const [walletAddress, setWalletAddress] = useState<string | null>(null);
   const [readable, setReadable] = useState<string | null>(null);
