@@ -1,5 +1,11 @@
 import { Suspense } from 'react'
 import MinerDashboard from './MinerDashboard'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Miner | Blink Hippo',
+  description: 'Mining page for Blink Hippo',
+};
 
 async function fetchMinerData() {
 

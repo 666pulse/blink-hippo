@@ -1,8 +1,11 @@
+'use client'
+
 import { useState, useEffect } from "react";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 
 function WalletConn() {
+
   const { wallet, publicKey, connect, disconnect, connecting, connected } =
     useWallet();
   const [walletAddress, setWalletAddress] = useState<string | null>(null);
